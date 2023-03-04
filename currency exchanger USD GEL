@@ -1,0 +1,14 @@
+choice = int(input("Enter 1 for USD or 0 for GEL: "))
+
+if choice == 1:
+  usd = float(input("Enter amount in US dollars: ")) # USD to Gel
+  exchange_rate = 2.59 #! replace it with current exchange rate
+  gel = usd * exchange_rate
+  print(f"{usd} USD is equal to {gel} GEL")
+elif choice == 0:
+  gel = float(input("Enter amount in GEL: ")) # GEL to USD
+  exchange_rate = 2.59 #! replace it with current exchange rate
+  usd = gel / exchange_rate
+  print(f"{gel} GEL is equal to {usd} USD")
+else:
+  print("Enter 1 or 0") 
