@@ -1,0 +1,15 @@
+BKG = float(input("Please input your weight in kg: ")) # inputs of weight and height
+BH = float(input("Please input your height in metres: "))
+
+BMI = BKG/(BH*BH) # calculation of BMI
+
+if BMI >= 25.0:
+    print("Bummer, Overweight") # possible outcomes
+    
+elif BMI <= 24.9 and BMI >= 18.5:
+    print("Congratulations, Healthy")
+    
+else:
+    print("Attention! Underweight")
+    
+print(BMI) # BMI result number
