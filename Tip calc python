@@ -1,0 +1,5 @@
+def tip_calc(amount, percentage):
+    result = (amount / 100) * percentage # formula
+    print(result)
+    
+tip_calc(300, 20) # example
